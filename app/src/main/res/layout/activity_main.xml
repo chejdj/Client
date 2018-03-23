@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aunt.stealen.MainActivity">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <LinearLayout android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#008EEF"
+        android:layout_alignParentTop="true">
+        <Button android:id="@+id/main"
+            android:layout_height="match_parent"
+            android:layout_width="60dp"
+            android:background="@drawable/btn_style"
+            android:paddingLeft="20dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/btn_back"
+            />
+        <TextView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingLeft="-65dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:text="地图显示"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_normalstyle"
+        android:id="@+id/satellite"
+        android:drawableLeft="@drawable/map_satittle"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
+</RelativeLayout>

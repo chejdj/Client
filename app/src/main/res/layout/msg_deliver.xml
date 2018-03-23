@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#008EEF">
+        <Button android:id="@+id/back_msg"
+            android:layout_height="match_parent"
+            android:layout_width="60dp"
+            android:background="@drawable/btn_style"
+            android:paddingLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:drawableLeft="@drawable/btn_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="发帖"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+        <ImageView android:id="@+id/deliver"
+            android:layout_height="match_parent"
+            android:src="@drawable/writer"
+            android:layout_width="40dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="160dp"
+      android:textSize="16sp"
+      android:hint="编辑内容"
+      android:gravity="top"
+      android:maxLines="6"
+      android:inputType="textMultiLine"
+      android:id="@+id/edit_msg"/>
+    <Button
+        android:id="@+id/deliver_msg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/regbtn"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="确认发布"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>
