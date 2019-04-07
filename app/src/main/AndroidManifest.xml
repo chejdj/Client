@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aunt.stealen">
-
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="24" />
+    package="com.aunt">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -22,19 +17,16 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".MyApplication1"
+        android:name="com.aunt.AuntApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_explore_blue_50_48dp"
         android:label="@string/app_name"
@@ -51,21 +43,21 @@
         <service
             android:name="com.baidu.location.f"
             android:enabled="true" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".informaTion" />
-        <activity android:name=".Login" />
-        <activity android:name=".LogoutActivity" />
-        <activity android:name=".Main1Activity"></activity>
-        <activity android:name=".OfflineMap" />
-        <activity android:name=".register_activity"/>
-        <activity android:name=".message_activty"></activity>
-        <activity android:name=".message_detail"/>
-        <activity android:name=".information_bus" />
-        <activity android:name=".bus_detail_information" />
-        <activity android:name=".weclome">
+        <activity android:name="com.aunt.ui.BaiduMapDetailActivity" />
+        <activity android:name="com.aunt.ui.BusActivity" />
+        <activity android:name="com.aunt.ui.LoginActivity" />
+        <activity android:name="com.aunt.ui.LogoutActivity" />
+        <activity android:name="com.aunt.ui.MainActivity"></activity>
+        <activity android:name="com.aunt.ui.OfflineMapActivity" />
+        <activity android:name="com.aunt.ui.RegisterActivity"/>
+        <activity android:name="com.aunt.ui.MessageWallActivity"></activity>
+        <activity android:name="com.aunt.ui.MessageDetailActivity"/>
+        <activity android:name="com.aunt.ui.BusNumberActivity" />
+        <activity android:name="com.aunt.ui.BusDetailActivity" />
+        <activity android:name="com.aunt.ui.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

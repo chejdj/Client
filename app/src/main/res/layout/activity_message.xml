@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.aunt.stealen.message_activty">
+    tools:context="com.aunt.stealen.com.aunt.ui.message_activty">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="46dp"
@@ -36,7 +36,7 @@
             android:gravity="center"
              />
     </RelativeLayout>
-    <com.aunt.view.RefreshableView
+    <com.aunt.widget.RefreshableView
         android:id="@+id/msg_refer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -44,5 +44,5 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/mesg_lst"></ListView>
-    </com.aunt.view.RefreshableView>
+    </com.aunt.widget.RefreshableView>
 </LinearLayout>

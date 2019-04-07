@@ -86,7 +86,7 @@
             android:layout_marginTop="17.5dp"
             />
     </RelativeLayout>
-    <com.aunt.view.RefreshableView
+    <com.aunt.widget.RefreshableView
         android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -94,5 +94,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/bus_detail_list"/>
-    </com.aunt.view.RefreshableView>
+    </com.aunt.widget.RefreshableView>
 </LinearLayout>

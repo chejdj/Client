@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context="com.aunt.stealen.weclome">
+    tools:context="com.aunt.stealen.com.aunt.ui.weclome">
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="match_parent"

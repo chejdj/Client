@@ -22,7 +22,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
-        <com.aunt.view.CircleImageView
+        <com.aunt.widget.CircleImageView
             android:id="@+id/picture"
             android:layout_width="38dp"
             android:layout_height="38dp"

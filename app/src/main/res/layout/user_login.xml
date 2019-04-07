@@ -50,7 +50,7 @@
                 android:textStyle="bold"
                 android:textSize="18sp"/>
 
-			<com.aunt.view.ClearEditText
+			<com.aunt.widget.ClearEditText
                 android:hint="XXX"
                 android:singleLine="true"
                 android:textStyle="bold"
@@ -79,7 +79,7 @@
                     android:textStyle="bold"
                     android:textSize="18sp"/>
 
-				<com.aunt.view.ClearEditText
+				<com.aunt.widget.ClearEditText
                     android:background="@drawable/txt_shape"
 					android:inputType="textPassword"
                     android:layout_width="fill_parent"
